@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gilroy';
+}
+body{
+    background-color: #edecec;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(249, 240, 241); */
+    padding: 0.1px;
+}
+#nav{
+    width: 100%;
+    height: 12vh;
+    /* background-color: red; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#nav h2{
+    height: 100%;
+    width: 18%;
+    /* background-color: rgb(249, 249, 11); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid black;
+    font-size: 20px;
+    font-weight: 400;
+}
+#nav h3{
+    display: none;
+}
+#nav h1{
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(249, 249, 11); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: monument;
+    letter-spacing: -2px;
+    position: relative;
+}
+#nav h1::after{
+    content: "©️";
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    right: 11%;
+}
+#nav h1::before{
+    content: "Model Management";
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #666;
+    position: absolute;
+    bottom: 11%;
+    right: 17%;
+    letter-spacing: 0.1px;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+    /* background-color: red; */
+}
+#nav h2:nth-last-child(2){
+    width: 24%;
+    /* background-color: red; */
+}
+#center{
+    width: 100%;
+    height: 82%;
+    /* background-color: red; */
+    padding: 45px;
+    position: relative;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overley{
+    width: 100%;
+    height: 49%;
+    bottom: 0;
+    /* background-color: red; */
+    position: absolute;
+    background-color: rgba(59, 55, 55, 0.247);
+    backdrop-filter: blur(3px);   
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#over1 h1{
+    font-size: 4vw;
+    font-family: sans-serif;
+    color: rgb(215, 182, 182);
+   margin-bottom: 1vw;
+}
+#over1 h2{
+    font-size: 3vh;
+    padding: 2vw 2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    margin-right: 20px;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+}
+
+#over2 h4{
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 500;
+    padding-top: 1vw;
+    margin-left: 1vw;
+}
+
+#scroll{
+
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    /* yhan display flex nhi lgana h bcz flex kr dega dono scroll me ni dikhenge */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container1{
+    width: 100%;
+    height: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    /* padding: 2vw; */
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 79%;
+    width: 16%;
+    margin: 2vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 20%;
+    
+}
+@keyframes anime {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#alphabets{
+    width: 100%;
+    height: 11vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid rgb(35, 34, 34);
+    border-bottom: 2px solid rgb(46, 46, 46);
+    margin-top: 2vw;
+}
+#alphabets h5{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 400;
+    border-bottom: 3px solid #0a0a0a;
+    letter-spacing: 2px;
+    margin-right: 2vw;
+}
+#alphabets h6{
+    font-size: 1.8vh;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(43, 42, 42);
+    /* background-color: yellow; */
+    padding: 0.4vw 0.6vw;
+    border-radius: 50%;
+    border: 1px solid rgba(68, 67, 67, 0);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+#alphabets h6:hover{
+    border: 1px solid black;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    padding: 7vh;
+}
+ #left{
+    width: 55%;
+    height: 100%;    
+    position: relative;
+}
+#left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10px;
+} 
+
+#right{
+    width: 30%;
+    height: 100%;
+     /* background-color: yellow;  */
+} 
+
+#right img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+ 
+#content-right{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 3vh;
+}
+
+#page3{
+    display: flex;
+    justify-content: space-around;
+}
+
+#page4{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw 7vw;
+}
+#page4>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 7vh;
+    /* background-color: red; */
+}
+
+.elem{
+    width: 100%;
+    height: 15vh;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease 0.5s;
+}
+.elem img{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    border-radius: 50%;
+    left: 1%;
+    opacity: 0;
+    transition: all ease 0.6s;
+    object-fit: cover;  
+}
+.elem h4{
+    /* background-color: yellow; */
+    width: 6%;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+.elem .elem-part2{
+    /* background-color: red; */
+    width: 45%;
+}
+.elem-part2 h1{
+    font-size: 2.3vw;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.elem:hover{
+    background-color: #d3cece;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+#morque{
+    width: 100%;
+    /* height: 20vh; */
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.6vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#morque h1{
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: monument;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    /* background-color: blue; */
+    /* margin-right: 16px; */
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% - 4px));
+    }
+}
+#footer{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(210, 248, 248); */
+}
+
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    #nav{
+        width: 100%;
+        height: 10vh;
+        padding: 0 5vw;
+    }
+    #nav h2{
+        display: none;
+    }
+    #nav h1{
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+    #nav h3{
+        display: block;
+    }
+    #nav h1::after{
+       display: none;
+    }
+    #nav h1::before{
+        display: none;
+    }
+
+
+
+    #center{
+        width: 100%;
+        height: 45%;
+        /* background-color: red; */
+        padding: 20px;
+        position: relative;
+    }
+    #content{
+        width: 100%;
+        height: 100%;
+        /* background-color: blue; */
+        position: relative;
+    }
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #overley{
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        /* background-color: red; */
+        position: absolute;
+        background-color: rgba(59, 55, 55, 0.247);
+        backdrop-filter: blur(3px);   
+    }
+    
+    #over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    #over1 h1{
+        font-size: 5vw;
+        font-family: sans-serif;
+        color: rgb(215, 182, 182);
+       margin-bottom: 1vw;
+    }
+    #over1 h2{
+        font-size: 3vh;
+        padding: 2vw 2vw;
+        /* background-color: blue; */
+        border-radius: 50%;
+        border: 2px solid white;
+        color: white;
+        margin-right: 20px;
+    }
+    
+    #over2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid white;
+    }
+    
+    #over2 h4{
+        color: white;
+        font-size: 1.3vw;
+        font-weight: 500;
+        padding-top: 1vw;
+        margin-left: 1vw;
+    }
+
+
+
+    #scroll{
+
+        width: 100%;
+        height: 15vh;
+        /* background-color: red; */
+        /* yhan display flex nhi lgana h bcz flex kr dega dono scroll me ni dikhenge */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #container1{
+        width: 100%;
+        height: 110%;
+        /* background-color: blue; */
+        display: inline-block;
+        /* padding: 2vw; */
+        animation-name: anime;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #scroll img{
+        /* display: none; */
+        height: 79%;
+        width: 20%;
+        margin: 2vw;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 30% 20%;
+    }
+
+
+    #alphabets{
+        width: 100%;
+        height: 11vh;
+        gap: 0.2vw;
+        margin-top: 2vw;
+    }
+    #alphabets h5{
+        font-size: 2.8vw;
+    }
+    #alphabets h6{
+        font-size: 1.5vh;
+    }
+    #alphabets h6:hover{
+        border: 1px solid black;
+    }
+
+
+    #page2{
+        height: 55%;
+        padding: 1vh;
+    }
+     #left{
+        width: 60%;     
+    }
+   
+     #right{
+        width: 36%;
+    }  
+    
+    #right img{
+        height: 60%;
+    }
+     
+    #content-right{
+        padding: 0.5vh;
+      
+    }
+    #content-right h3{
+        font-size: 1.8vh;
+    }
+    #content-right h5{
+        font-size: 1.2vh;
+    }
+    
+#page4{
+    height: 50%;
+}
+
+    #page4>h1{
+        font-size: 5vw;
+        margin-bottom: 3vh;   
+    }
+    
+    
+    .elem{
+        width: 100%;
+        height: 6vh;
+    }
+ 
+ 
+    #morque{
+        width: 100%;
+        /* height: 20vh; */
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 0.8vw;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+    #morque h1{
+        display: inline-block;
+        font-size: 3vw;
+        font-weight: 1000;
+        font-family: monument;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+        /* background-color: blue; */
+        margin-right: 16px;
+        letter-spacing: 2px;
+        animation-name: move;
+        animation-duration: 7s;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+    }
+}
